@@ -16,7 +16,7 @@ export default function Home() {
                     AED training
                 </Link>
                 <Link className="btn btn-primary" href="#">
-                    AR scenario's
+                    AR scenario&#39;s
                 </Link>
             </div>
         </div>
