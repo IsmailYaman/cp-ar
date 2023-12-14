@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="btm-nav bg-primary">
             <button>
                 <a href="/">
-                    <Image src={"img/home.svg"} width={40} height={40} alt="home" />
+                    <Image src={"/img/home.svg"} width={40} height={40} alt="home" />
                 </a>
             </button>
         </div>

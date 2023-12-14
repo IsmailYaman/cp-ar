@@ -5,7 +5,7 @@ import Header from "../components/header";
 const AedHome = () => {
     return (
         <>
-            <Header  title="AED trainin"/>
+            <Header  title="AED training"/>
             <div>AedHome</div>
             <Navbar />
         </>

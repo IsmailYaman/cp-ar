@@ -10,7 +10,7 @@ export default function Home() {
                 </div>
                 <h1 className="text-center pb-10 pt-5">CP-AR</h1>
                 <Link className="btn btn-secondary mb-2" href="/ehbo">
-                    Eerste hulp bij een hartaanval
+                    Eerste hulp bij hartaanvallen
                 </Link>
                 <Link className="btn btn-secondary mb-2" href="/aed">
                     AED training
