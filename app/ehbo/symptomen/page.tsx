@@ -7,9 +7,9 @@ import React from "react";
 const Symptomen = () => {
     const symptoom = symptomen;
     return (
-        <>
+        <div className="flex flex-col h-screen">
             <Header title="Eeste hulp bij hartaanvallen" />
-            <div className="w-96 mx-auto">
+            <div className="w-96 mx-auto flex-grow">
                 <div className="pt-5">
                     <h2 className="text-2xl">{symptoom.title1}</h2>
                     <ul className="list-disc pl-5 mb-5">
@@ -23,7 +23,7 @@ const Symptomen = () => {
                 </div>
             </div>
             <Navbar />
-        </>
+        </div>
     );
 };
 

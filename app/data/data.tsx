@@ -112,37 +112,39 @@ export const aed = [
     },
     {
         id: 2,
-        title: "2. Bel of laat 112 bellen",
+        title: "1. Voorbereiding van het AED",
         description: [
-            "Vraag om een ambulance en vertel dat er een slachtoffer bewusteloos is.",
-            "Zet de telefoon op luidspreken en leg deze bij je in de buurt. De hulpverlener aan de telefoon zal je door de reanimatie begeleiden.",
-            "Laat een AED halen door een omstander. Is er geen omstander? Alleen als een AED binnen je bereik is, pak je de AED. Laat de slachtoffer zonodig even alleen.",
+            "Ontbloot de borstkas van de slachtoffer: onderbreek de borstcompressies zo kort mogelijk",
+            "Activeer de AED.",
         ],
         image: ["/img/aed/2.jpg", "/img/aed/3.jpg"],
     },
     {
         id: 3,
-        title: "3. Controleer de ademhaling",
+        title: "2. Plaats de pads op de borst van de slachtoffer",
         description: [
-            "Til de kin op door twee vingers onder de kin te plaatsen en het hoofd naar achteren te kantelen.",
-            "Kijk, terwijl je de kin omhoog houdt naar de borstkast om te zien of deze omhoog komt.",
-            "Luister of je een ademhaling hoort en voel of je adem langs je wang voelt gaan.",
-            "Hoor je geen ademhaling? Start dan met reanimeren.",
+            "Plaats de pads op de borst van de slachtoffer",
+            "Zorg ervoor dat ze op de juiste kant worden geplaats, zoals aangegeven op de pad.",
+            "Zorg ervoor dat niemand het slachtoffer aanraakt.",
         ],
         image: "/img/aed/4.jpg",
     },
     {
         id: 4,
-        title: "4. Begin met reanimatie",
-        description: ["Plaats de slachtoffer op zijn rug."],
+        title: "3. Druk op “analyseren” op het AED",
+        description: [
+            "Het AED zal een analyse doen van het slachtoffer.",
+            "Als een schok nodig is, informeert de machine je.",
+            "Zorg ervoor dat niemand het slachtoffer aanraakt.",
+        ],
         image: "/img/aed/5.jpg",
     },
     {
         id: 5,
-        title: "4. Begin met reanimatie",
+        title: "4. Check de slachtoffer",
         description: [
-            "Plaats de slachtoffer op zijn rug.",
-            "Plaats de onderkant van je ene hand op de borst van het slachtoffer.",
+            "Verwijder de pads niet een ga door met reanimeren. Doe dit voor 5 cyclussen voordat je het AED opnieuw gebruikt.",
+            "Check of de pads nog op hun plaats zitten."
         ],
         image: "/img/aed/6.jpg",
     },

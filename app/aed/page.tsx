@@ -27,9 +27,9 @@ const AedHome: React.FC = () => {
     const hasNext = currentAedIndex < aed.length - 1; // Determine if there is a next item
 
     return (
-        <>
+        <div className="flex flex-col h-screen">
             <Header title="AED training" />
-            <div className="w-96 mx-auto flex flex-col h-screen">
+            <div className="w-96 mx-auto flex-grow">
                 <div className="pt-5">
                     <h1 className="text-3xl">Wanneer moet je een AED gebruiken?</h1>
                     <p className="pt-2.5">
@@ -70,23 +70,25 @@ const AedHome: React.FC = () => {
                     )}
                 </div>
             </div>
-            {!hasNext && (
-                <div className="fixed inset-x-0 bottom-0 flex flex-col items-center pb-4 z-10">
-                    <a href="/aed" className="btn btn-primary w-full max-w-xs text-center">
+            {!hasNext ? ( // Use the variable hasNext
+                <div className="container w-96 mx-auto flex flex-col items-center pb-4 z-10">
+                    <a href="/aed" className="btn btn-primary btn-block text-center">
                         Eerste hulp bij hartaanvallen
                     </a>
-                    <a href="/" className="btn btn-secondary w-full max-w-xs my-3 text-center">
+                    <a href="/" className="btn btn-secondary btn-block my-3 text-center">
                         Terug naar hoofdmenu
                     </a>
                 </div>
+            ) : (
+                ""
             )}
             <Navbar
-                goToNextHandeling={goToNextAed}
-                goToPreviousHandeling={goToPreviousAed}
+                goToNextStep={goToNextAed}
+                goToPreviousStep={goToPreviousAed}
                 hasPrevious={currentAedIndex > 0}
                 hasNext={hasNext}
             />
-        </>
+        </div>
     );
 };
 

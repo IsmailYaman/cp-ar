@@ -2,35 +2,44 @@ import React from "react";
 import Image from "next/image";
 
 interface NavbarProps {
-    goToNextHandeling?: () => void;
-    goToPreviousHandeling?: () => void;
+    goToNextStep?: () => void;
+    goToPreviousStep?: () => void;
     hasPrevious?: boolean;
     hasNext?: boolean;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ goToNextHandeling, goToPreviousHandeling, hasPrevious, hasNext }) => {
+const Navbar: React.FC<NavbarProps> = ({ goToNextStep, goToPreviousStep, hasPrevious, hasNext }) => {
     return (
         <>
-            <div className="bg-primary flex justify-between">
-                <button onClick={goToPreviousHandeling}>
+            <div className="bg-primary flex py-3 justify-between items-center text-center">
+                <button onClick={goToPreviousStep} className={`flex-grow ${!hasPrevious ? "invisible" : ""}`}>
                     <Image
                         src={"/img/back.svg"}
-                        className={`${!hasPrevious ? "invisible" : ""}`}
                         width={40}
                         height={40}
                         alt="back"
+                        className="mx-auto"
+                        layout="intrinsic"
                     />
                 </button>
-                <a href="/">
-                    <Image src={"/img/home.svg"} width={40} height={40} alt="home" />
+                <a href="/" className="flex-grow">
+                    <Image
+                        src={"/img/home.svg"}
+                        width={40}
+                        height={40}
+                        alt="home"
+                        className="mx-auto"
+                        layout="intrinsic"
+                    />
                 </a>
-                <button onClick={goToNextHandeling}>
+                <button onClick={goToNextStep} className={`flex-grow ${!hasNext ? "invisible" : ""}`}>
                     <Image
                         src={"/img/next.svg"}
-                        className={`${!hasNext ? "invisible" : ""}`}
                         width={40}
                         height={40}
                         alt="next"
+                        className="mx-auto"
+                        layout="intrinsic"
                     />
                 </button>
             </div>

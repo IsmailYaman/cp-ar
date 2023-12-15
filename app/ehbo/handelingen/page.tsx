@@ -15,11 +15,11 @@ interface Handeling {
 const Handelingen: React.FC = () => {
     const [currentHandelingIndex, setCurrentHandelingIndex] = useState<number>(0);
 
-    const goToNextHandeling = (): void => {
+    const goToNextStep = (): void => {
         setCurrentHandelingIndex((prevIndex) => Math.min(prevIndex + 1, handelingen.length - 1));
     };
 
-    const goToPreviousHandeling = (): void => {
+    const goToPreviousStep = (): void => {
         setCurrentHandelingIndex((prevIndex) => Math.max(prevIndex - 1, 0));
     };
 
@@ -27,7 +27,6 @@ const Handelingen: React.FC = () => {
     const hasNext = currentHandelingIndex < handelingen.length - 1; // Declare the variable hasNext
 
     return (
-        <>
             <div className="flex flex-col h-screen">
                 <Header title="Eerste hulp bij hartaanvallen" />
                 <div className="w-96 mx-auto flex-grow">
@@ -72,13 +71,12 @@ const Handelingen: React.FC = () => {
                     ""
                 )}
                 <Navbar
-                    goToNextHandeling={goToNextHandeling}
-                    goToPreviousHandeling={goToPreviousHandeling}
+                    goToNextStep={goToNextStep}
+                    goToPreviousStep={goToPreviousStep}
                     hasPrevious={currentHandelingIndex > 0}
                     hasNext={currentHandelingIndex < handelingen.length - 1}
                 />
             </div>
-        </>
     );
 };
 
