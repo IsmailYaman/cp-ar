@@ -99,34 +99,46 @@ export const handelingen = [
     },
 ];
 
-export const oorzakenn = [
-    {
-        id: 1,
-        title1: "Wat zijn de oorzaken van een hartaanval?",
-        description1: [
-            "Meestal ontstaat een hartinfarct door een verstopping in de kransslagaders. Deze verstopping ontstaat doordat deeltjes aan de wand van de kransslagader blijven plekken. Dit zijn bijvoorbeeld ontstekingscellen, cholesterol of vetdeeltjes. Dit noemen we slagaderverkalking. Het bloedvat gaat zo steeds meer dicht zitten. Meestal merk je hier niets van. Pas bij een ernstige verstopping ontstaat er pijn op de borst.",
-        ],
-        title2: "Risicofactoren slagaderverkalking",
-        description2: [
-            "Factoren die slagaderverkalking versnellen noemen we risicofactoren. Belangrijke risicofactoren zijn:",
-        ],
-        description3: [
-            "Roken",
-            "Hoge bloeddruk",
-            "Hoog cholesterol",
-            "Diabetes",
-            "Overgewicht",
-            "Weinig beweging",
-            "Stress",
-        ],
-        title4: "Overige oorzaken hartaanval",
-        description4: [
-            "De kans op een hartinfarct kan toenemen als je ouder wordt. Ook kan geslacht en erfelijkheid een rol spelen.",
-        ],
-        description5: [	
-            "Geslacht",
-            "Leeftijd",
-            "Erfelijkheid",
-        ],
-    },
-];
+export const oorzaken = {
+    id: 1,
+    title1: "Wat zijn de oorzaken van een hartaanval?",
+    description1: [
+        "Meestal ontstaat een hartinfarct door een verstopping in de kransslagaders. Deze verstopping ontstaat doordat deeltjes aan de wand van de kransslagader blijven plekken. Dit zijn bijvoorbeeld ontstekingscellen, cholesterol of vetdeeltjes. Dit noemen we slagaderverkalking. Het bloedvat gaat zo steeds meer dicht zitten. Meestal merk je hier niets van. Pas bij een ernstige verstopping ontstaat er pijn op de borst.",
+    ],
+    title2: "Risicofactoren slagaderverkalking",
+    description2: [
+        "Factoren die slagaderverkalking versnellen noemen we risicofactoren. Belangrijke risicofactoren zijn:",
+    ],
+    description3: [
+        "Roken",
+        "Hoge bloeddruk",
+        "Hoog cholesterol",
+        "Diabetes",
+        "Overgewicht",
+        "Weinig beweging",
+        "Stress",
+    ],
+    title4: "Overige oorzaken hartaanval",
+    description4: [
+        "De kans op een hartinfarct kan toenemen als je ouder wordt. Ook kan geslacht en erfelijkheid een rol spelen.",
+    ],
+    description5: ["Geslacht", "Leeftijd", "Erfelijkheid"],
+};
+
+export const symptomen = {
+    id: 1,
+    title1: "Wat zijn de symptomen van een hartaanval?",
+    description1: [
+        "een hevige, zware en drukkende pijn midden op de borst die niet over gaat",
+        "een uitstralende pijn naar kaken en armen, vooral naar de linkerarm",
+        "pijn in de schouders of tussen de schouderbladen",
+        "wit wegtrekken",
+        "hevig transpireren",
+        "misselijkheid en braken",
+        "onrust en (doods)angst",
+        "kortademigheid en/of bewustzijnsverlies.",
+    ],
+    description2: [
+        "Een hartinfarct kan ook optreden zonder dat je klachten hebt. Dat noemen we een stil infarct.Het kan leiden tot (levensbedreigende) hartritmestoornissen en tot hartfalen doordat je hart niet meer voldoende pompt.",
+    ],
+};
