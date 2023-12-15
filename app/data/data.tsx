@@ -6,7 +6,7 @@ export const handelingen = [
             "Schud aan de schouders en vraag 'Gaat het?'",
             "Geen reactie? Dan is de slachtoffer bewusteloos.",
         ],
-        image: "/img/handelingen_tijdens_eerste_hulp/1.jpg",
+        image: "/img/handelingen/1.jpg",
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ export const handelingen = [
             "Zet de telefoon op luidspreken en leg deze bij je in de buurt. De hulpverlener aan de telefoon zal je door de reanimatie begeleiden.",
             "Laat een AED halen door een omstander. Is er geen omstander? Alleen als een AED binnen je bereik is, pak je de AED. Laat de slachtoffer zonodig even alleen.",
         ],
-        image: "/img/handelingen_tijdens_eerste_hulp/2.jpg",
+        image: "/img/handelingen/2.jpg",
     },
     {
         id: 3,
@@ -27,13 +27,13 @@ export const handelingen = [
             "Luister of je een ademhaling hoort en voel of je adem langs je wang voelt gaan.",
             "Hoor je geen ademhaling? Start dan met reanimeren.",
         ],
-        image: "/img/handelingen_tijdens_eerste_hulp/3.jpg",
+        image: "/img/handelingen/3.jpg",
     },
     {
         id: 4,
         title: "4. Begin met reanimatie",
         description: ["Plaats de slachtoffer op zijn rug."],
-        image: "/img/handelingen_tijdens_eerste_hulp/4.jpg",
+        image: "/img/handelingen/4.jpg",
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ export const handelingen = [
             "Plaats de slachtoffer op zijn rug.",
             "Plaats de onderkant van je ene hand op de borst van het slachtoffer.",
         ],
-        image: "/img/handelingen_tijdens_eerste_hulp/5.jpg",
+        image: "/img/handelingen/5.jpg",
     },
     {
         id: 6,
@@ -52,7 +52,7 @@ export const handelingen = [
             "Plaats de onderkant van je ene hand op de borst van het slachtoffer.",
             "Plaats je tweede hand op de eerste hand en verstrenegel de vingers van beide handen.",
         ],
-        image: "/img/handelingen_tijdens_eerste_hulp/6.jpg",
+        image: "/img/handelingen/6.jpg",
     },
     {
         id: 7,
@@ -63,7 +63,7 @@ export const handelingen = [
             "Plaats je tweede hand op de eerste hand en verstrenegel de vingers van beide handen.",
             "Plaats je lichaam boven je handen zodat je armen recht en iets stijf zijn.",
         ],
-        image: "/img/handelingen_tijdens_eerste_hulp/7.jpg",
+        image: "/img/handelingen/7.jpg",
     },
     {
         id: 8,
@@ -75,7 +75,7 @@ export const handelingen = [
             "Plaats je lichaam boven je handen zodat je armen recht en iets stijf zijn.",
             "Geef 30 borstcompressies in een tempo van 100 tot 120 keer per minuut. Het kan helpen om hardop te tellen.",
         ],
-        image: "/img/handelingen_tijdens_eerste_hulp/8.jpg",
+        image: "/img/handelingen/8.jpg",
     },
     {
         id: 9,
@@ -85,7 +85,7 @@ export const handelingen = [
             "Adem normaal in, plaats je lippen rond de mond van het slachtoffer en sluit de goed af. Adem in één seconde gelijkmatig uit in de mond van het slachtoffer. Kijk daarbij uit je ooghoek of de borstkast van het slachtoffer omhoog komt.",
             "Herhaal dit, zodat je totaal 2 beademingen geeft binnen 10 seconden.",
         ],
-        image: "/img/handelingen_tijdens_eerste_hulp/9.jpg",
+        image: "/img/handelingen/9.jpg",
     },
     {
         id: 10,
@@ -95,7 +95,56 @@ export const handelingen = [
             "Ga door tot de AED er is.",
             "Stop niet als de ambulance arriveert, maar ga door tot de ambulancezorgverleners zeggen dat je mag stoppen.",
         ],
-        image: "/img/handelingen_tijdens_eerste_hulp/10.jpg",
+        image: "/img/handelingen/10.jpg",
+    },
+];
+
+export const aed = [
+    {
+        id: 1,
+        title: "Hoe ziet een AED er uit?",
+        description: [
+            "Een AED is zo gemaakt dat iedereen het meteen begrijpt. Daarom heeft de AED maar paar knopjes en totaal 2 componenten. Deze zijn:",
+            "1. De pads",
+            "2. De AED-toestel",
+        ],
+        image: "/img/aed/1.jpg",
+    },
+    {
+        id: 2,
+        title: "2. Bel of laat 112 bellen",
+        description: [
+            "Vraag om een ambulance en vertel dat er een slachtoffer bewusteloos is.",
+            "Zet de telefoon op luidspreken en leg deze bij je in de buurt. De hulpverlener aan de telefoon zal je door de reanimatie begeleiden.",
+            "Laat een AED halen door een omstander. Is er geen omstander? Alleen als een AED binnen je bereik is, pak je de AED. Laat de slachtoffer zonodig even alleen.",
+        ],
+        image: ["/img/aed/2.jpg", "/img/aed/3.jpg"],
+    },
+    {
+        id: 3,
+        title: "3. Controleer de ademhaling",
+        description: [
+            "Til de kin op door twee vingers onder de kin te plaatsen en het hoofd naar achteren te kantelen.",
+            "Kijk, terwijl je de kin omhoog houdt naar de borstkast om te zien of deze omhoog komt.",
+            "Luister of je een ademhaling hoort en voel of je adem langs je wang voelt gaan.",
+            "Hoor je geen ademhaling? Start dan met reanimeren.",
+        ],
+        image: "/img/aed/4.jpg",
+    },
+    {
+        id: 4,
+        title: "4. Begin met reanimatie",
+        description: ["Plaats de slachtoffer op zijn rug."],
+        image: "/img/aed/5.jpg",
+    },
+    {
+        id: 5,
+        title: "4. Begin met reanimatie",
+        description: [
+            "Plaats de slachtoffer op zijn rug.",
+            "Plaats de onderkant van je ene hand op de borst van het slachtoffer.",
+        ],
+        image: "/img/aed/6.jpg",
     },
 ];
 

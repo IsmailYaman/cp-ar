@@ -11,7 +11,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ goToNextHandeling, goToPreviousHandeling, hasPrevious, hasNext }) => {
     return (
         <>
-            <div className="btm-nav bg-primary flex justify-between">
+            <div className="bg-primary flex justify-between">
                 <button onClick={goToPreviousHandeling}>
                     <Image
                         src={"/img/back.svg"}

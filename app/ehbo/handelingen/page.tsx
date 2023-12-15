@@ -28,54 +28,56 @@ const Handelingen: React.FC = () => {
 
     return (
         <>
-            <Header title="Eerste hulp bij hartaanvallen" />
-            <div className="w-96 mx-auto">
-                <div className="pt-5">
-                    <h1 className="text-3xl">Handelingen tijdens eerste hulp</h1>
-                    <p className="pt-2.5">
-                        Een hartaanval kan overal plaatsvinden. Thuis, tijdens werk of tijdens sporten. Om een
-                        effectieve eerste hulp te bieden, worden er stappen gevolgd. Hier krijg je stap-voor-stap uitleg
-                        over eerste hulp bij hartaanvallen.
-                    </p>
-                </div>
-                <div className="pt-5">
-                    <h2 className="text-2xl">{currentHandeling.title}</h2>
-                    <ol className="list-decimal mb-5">
-                    {currentHandeling.description.map((desc, index) => (
-                            <li key={index} className="pt-2.5">
-                                {desc}
-                            </li>
-                    ))}
-                    </ol>
+            <div className="flex flex-col h-screen">
+                <Header title="Eerste hulp bij hartaanvallen" />
+                <div className="w-96 mx-auto flex-grow">
+                    <div className="pt-5">
+                        <h1 className="text-3xl">Handelingen tijdens eerste hulp</h1>
+                        <p className="pt-2.5">
+                            Een hartaanval kan overal plaatsvinden. Thuis, tijdens werk of tijdens sporten. Om een
+                            effectieve eerste hulp te bieden, worden er stappen gevolgd. Hier krijg je stap-voor-stap
+                            uitleg over eerste hulp bij hartaanvallen.
+                        </p>
                     </div>
                     <div className="pt-5">
-                    <Image
-                        className="rounded-xl"
-                        src={currentHandeling.image}
-                        alt={`Handeling ${currentHandelingIndex + 1}`}
-                        width={400}
-                        height={300}
-                    />
+                        <h2 className="text-2xl">{currentHandeling.title}</h2>
+                        <ol className="list-decimal mb-5">
+                            {currentHandeling.description.map((desc, index) => (
+                                <li key={index} className="pt-2.5">
+                                    {desc}
+                                </li>
+                            ))}
+                        </ol>
+                    </div>
+                    <div className="pt-5">
+                        <Image
+                            className="rounded-xl"
+                            src={currentHandeling.image}
+                            alt={`Handeling ${currentHandelingIndex + 1}`}
+                            width={400}
+                            height={300}
+                        />
+                    </div>
                 </div>
+                {!hasNext ? ( // Use the variable hasNext
+                    <div className="container w-96 mx-auto flex flex-col items-center pb-4 z-10">
+                        <a href="/aed" className="btn btn-primary btn-block text-center">
+                            AED training
+                        </a>
+                        <a href="/" className="btn btn-secondary btn-block my-3 text-center">
+                            Terug naar hoofdmenu
+                        </a>
+                    </div>
+                ) : (
+                    ""
+                )}
+                <Navbar
+                    goToNextHandeling={goToNextHandeling}
+                    goToPreviousHandeling={goToPreviousHandeling}
+                    hasPrevious={currentHandelingIndex > 0}
+                    hasNext={currentHandelingIndex < handelingen.length - 1}
+                />
             </div>
-            {!hasNext ? ( // Use the variable hasNext
-                <div className="fixed w-screen mx-auto bottom-20 flex flex-col items-center pb-4 z-10">
-                    <a href="/aed" className="btn btn-primary w-full max-w-xs text-center">
-                        AED training
-                    </a>
-                    <a href="/" className="btn btn-secondary w-full max-w-xs my-3 text-center">
-                        Terug naar hoofdmenu
-                    </a>
-                </div>
-            ) : (
-                ""
-            )}
-            <Navbar
-                goToNextHandeling={goToNextHandeling}
-                goToPreviousHandeling={goToPreviousHandeling}
-                hasPrevious={currentHandelingIndex > 0}
-                hasNext={currentHandelingIndex < handelingen.length - 1}
-            />
         </>
     );
 };
