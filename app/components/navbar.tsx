@@ -12,7 +12,7 @@ const Navbar: React.FC<NavbarProps> = ({ goToNextStep, goToPreviousStep, hasPrev
     return (
         <>
             <div className="bg-primary flex py-3 justify-between items-center text-center">
-                <button onClick={goToPreviousStep} className={`flex-grow ${!hasPrevious ? "invisible" : ""}`}>
+                <a onClick={goToPreviousStep} className={`flex-grow ${!hasPrevious ? "invisible" : ""}`}>
                     <Image
                         src={"/img/back.svg"}
                         width={40}
@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ goToNextStep, goToPreviousStep, hasPrev
                         className="mx-auto"
                         layout="intrinsic"
                     />
-                </button>
+                </a>
                 <a href="/" className="flex-grow">
                     <Image
                         src={"/img/home.svg"}
@@ -32,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ goToNextStep, goToPreviousStep, hasPrev
                         layout="intrinsic"
                     />
                 </a>
-                <button onClick={goToNextStep} className={`flex-grow ${!hasNext ? "invisible" : ""}`}>
+                <a onClick={goToNextStep} className={`flex-grow ${!hasNext ? "invisible" : ""}`}>
                     <Image
                         src={"/img/next.svg"}
                         width={40}
@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({ goToNextStep, goToPreviousStep, hasPrev
                         className="mx-auto"
                         layout="intrinsic"
                     />
-                </button>
+                </a>
             </div>
         </>
     );

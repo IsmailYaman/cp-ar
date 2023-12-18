@@ -102,12 +102,10 @@ export const handelingen = [
 export const aed = [
     {
         id: 1,
-        title: "Hoe ziet een AED er uit?",
-        description: [
-            "Een AED is zo gemaakt dat iedereen het meteen begrijpt. Daarom heeft de AED maar paar knopjes en totaal 2 componenten. Deze zijn:",
-            "1. De pads",
-            "2. De AED-toestel",
-        ],
+        introTitle: "Hoe ziet een AED er uit?",
+        intro: "Een AED is zo gemaakt dat iedereen het meteen begrijpt. Daarom heeft de AED maar paar knopjes en totaal 2 componenten. Deze zijn:",
+        description: ["De pads", "De AED-toestel"],
+        outro: "Meeste AED’s hebben een spraakfunctie die stap-voor-stap uitlegd hoe het apparaat gebruikt moet worden. Een AED zal ook geen schok geven als dat niet nodig is. Elke AED heeft een analyse functie die de lichaam van het slachtoffer scant om te kijken of de hart nog klopt.",
         image: "/img/aed/1.jpg",
     },
     {
@@ -144,7 +142,7 @@ export const aed = [
         title: "4. Check de slachtoffer",
         description: [
             "Verwijder de pads niet een ga door met reanimeren. Doe dit voor 5 cyclussen voordat je het AED opnieuw gebruikt.",
-            "Check of de pads nog op hun plaats zitten."
+            "Check of de pads nog op hun plaats zitten.",
         ],
         image: "/img/aed/6.jpg",
     },

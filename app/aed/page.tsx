@@ -7,8 +7,11 @@ import Image from "next/image";
 
 interface Aed {
     id: number;
-    title: string;
+    title?: string;
+    introTitle?: string;
+    intro?: string;
     description: string[];
+    outro?: string;
     image: string | string[]; // image can be either a string or an array of strings
 }
 
@@ -39,12 +42,15 @@ const AedHome: React.FC = () => {
                     </p>
                 </div>
                 <div className="pt-5">
-                    <h2 className="text-2xl">{currentAed.title}</h2>
-                    {currentAed.description.map((desc, index) => (
-                        <p key={index} className="list-disc mb-5">
-                            {desc}
-                        </p>
-                    ))}
+                    {currentAed.introTitle ? <h2 className="text-2xl">{currentAed.introTitle}</h2> : ""}
+                    {currentAed.title ? <h2 className="text-2xl">{currentAed.title}</h2> : ""}
+                    {currentAed.intro ? <p className="pt-2.5">{currentAed.intro}</p> : ""}
+                    <ol className="list-decimal py-2.5">
+                        {currentAed.description.map((desc, index) => (
+                            <li key={index}>{desc}</li>
+                        ))}
+                    </ol>
+                    {currentAed.outro ? <p className="pt-2.5">{currentAed.outro}</p> : ""}
                 </div>
                 <div className="pt-5">
                     {Array.isArray(currentAed.image) ? (
