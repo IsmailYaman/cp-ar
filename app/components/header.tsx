@@ -15,7 +15,7 @@ const Header = ({ title }: { title: string }) => {
                 </Link>
             </div>
             <div className="flex-none">
-                <Link className="btn btn-ghost" href="https://360fabriek.8thwall.app/ismail-test/">
+                <Link className="btn btn-ghost" disabled href="https://360fabriek.8thwall.app/ismail-test/">
                     <Image src={"/img/ar.svg"} width={30} height={30} alt="ar" />
                 </Link>
             </div>
