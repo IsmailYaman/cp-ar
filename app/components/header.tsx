@@ -9,14 +9,14 @@ const Header = ({ title }: { title: string }) => {
     return (
         <div className="navbar bg-primary">
             <div className="flex-1">
-                <Link href="#" onClick={() => router.back()} className="btn btn-ghost text-white">
-                    <Image src={"/img/back.svg"} width={20} height={20} alt="logo" />
+                <Link href="#" onClick={() => router.back()} className="btn btn-ghost text-lg text-white">
+                    <Image src={"/img/back.svg"} width={30} height={30} alt="logo" />
                     {title}
                 </Link>
             </div>
             <div className="flex-none">
                 <Link className="btn btn-ghost" href="/ehbo">
-                    <Image src={"/img/ar.svg"} width={40} height={40} alt="ar" />
+                    <Image src={"/img/ar.svg"} width={30} height={30} alt="ar" />
                 </Link>
             </div>
         </div>
