@@ -16,7 +16,7 @@ export default function Home() {
                     <Link className="btn btn-secondary mb-5" href="/aed">
                         AED training
                     </Link>
-                    <Link className="btn btn-primary" disabled href="https://360fabriek.8thwall.app/ismail-test/">
+                    <Link className="btn btn-primary btn-disabled" tabIndex={-1} role="button" aria-disabled="true" href="https://360fabriek.8thwall.app/ismail-test/">
                         AR scenario&#39;s
                     </Link>
                 </div>

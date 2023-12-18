@@ -46,7 +46,7 @@ body {
 }
 
 .btn{
-  @apply rounded-full border-2 border-primary/50;
+  @apply rounded-full 
 }
 
 
