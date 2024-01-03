@@ -7,7 +7,7 @@ import React from "react";
 const Header = ({ title }: { title: string }) => {
     const router = useRouter()
     return (
-        <div className="navbar bg-primary">
+        <div className="navbar fixed top-0 bg-primary">
             <div className="flex-1">
                 <Link href="#" onClick={() => router.back()} className="btn btn-ghost text-lg text-white">
                     <Image src={"/img/back.svg"} width={30} height={30} alt="logo" />

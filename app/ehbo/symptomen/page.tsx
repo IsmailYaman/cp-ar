@@ -7,7 +7,7 @@ import React from "react";
 const Symptomen = () => {
     const symptoom = symptomen;
     return (
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col pt-20 h-screen">
             <Header title="Eeste hulp bij hartaanvallen" />
             <div className="w-96 mx-auto flex-grow">
                 <div className="pt-5">

@@ -30,9 +30,9 @@ const AedHome: React.FC = () => {
     const hasNext = currentAedIndex < aed.length - 1; // Determine if there is a next item
 
     return (
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col pt-20 overflow-auto h-screen">
             <Header title="AED training" />
-            <div className="w-96 mx-auto flex-grow">
+            <div className="w-96 mx-auto">
                 <div className="pt-5">
                     <h1 className="text-3xl">Wanneer moet je een AED gebruiken?</h1>
                     <p className="pt-2.5">
@@ -45,7 +45,7 @@ const AedHome: React.FC = () => {
                     {currentAed.introTitle ? <h2 className="text-2xl">{currentAed.introTitle}</h2> : ""}
                     {currentAed.title ? <h2 className="text-2xl">{currentAed.title}</h2> : ""}
                     {currentAed.intro ? <p className="pt-2.5">{currentAed.intro}</p> : ""}
-                    <ol className="list-decimal py-2.5">
+                    <ol className="list-decimal list-inside py-2.5">
                         {currentAed.description.map((desc, index) => (
                             <li key={index}>{desc}</li>
                         ))}
@@ -76,8 +76,8 @@ const AedHome: React.FC = () => {
                     )}
                 </div>
             </div>
-            {!hasNext ? ( // Use the variable hasNext
-                <div className="container w-96 mx-auto flex flex-col items-center pb-4 z-10">
+            {!hasNext ? ( 
+                <div className="container w-96 mx-auto flex flex-col items-center py-4 z-10">
                     <a href="/aed" className="btn btn-primary btn-block text-center">
                         Eerste hulp bij hartaanvallen
                     </a>
