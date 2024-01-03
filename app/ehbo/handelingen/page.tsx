@@ -30,9 +30,9 @@ const Handelingen: React.FC = () => {
             <div className="flex flex-col mt-20 mb-24 h-screen">
                 <Header title="Eerste hulp bij hartaanvallen" />
                 <div className="w-96 mx-auto pb-5">
-                    <div className="py-5">
+                    <div className="py-10">
                         <h1 className="text-3xl">Handelingen tijdens eerste hulp</h1>
-                        <p className="pt-2.5">
+                        <p className="pt-4">
                             Een hartaanval kan overal plaatsvinden. Thuis, tijdens werk of tijdens sporten. Om een
                             effectieve eerste hulp te bieden, worden er stappen gevolgd. Hier krijg je stap-voor-stap
                             uitleg over eerste hulp bij hartaanvallen.
@@ -42,7 +42,7 @@ const Handelingen: React.FC = () => {
                         <h2 className="text-2xl">{currentHandeling.title}</h2>
                         <ol className="list-decimal list-inside mb-5">
                             {currentHandeling.description.map((desc, index) => (
-                                <li key={index} className="pt-2.5">
+                                <li key={index} className="pt-4">
                                     {desc}
                                 </li>
                             ))}
@@ -60,10 +60,10 @@ const Handelingen: React.FC = () => {
                 </div>
                 {!hasNext ? ( // Use the variable hasNext
                     <div className="container w-96 mx-auto flex flex-col items-center pb-4 z-10">
-                        <a href="/aed" className="btn btn-primary btn-block text-center">
+                        <a href="/aed" className="btn btn-lg btn-primary btn-block text-center">
                             AED training
                         </a>
-                        <a href="/" className="btn btn-secondary btn-block my-3 text-center">
+                        <a href="/" className="btn btn-lg btn-secondary btn-block my-3 text-center">
                             Terug naar hoofdmenu
                         </a>
                     </div>

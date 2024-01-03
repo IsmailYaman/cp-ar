@@ -38,15 +38,18 @@
   }
 }
 
+
+
 body {
   @apply bg-repeat;
   background-image: url('/img/logo.svg');
   background-color: rgba(255, 238, 238, 0.396);
   background-size: 20%;
+  
 }
 
 .btn{
-  @apply rounded-full 
+  @apply rounded-full;
 }
 
 

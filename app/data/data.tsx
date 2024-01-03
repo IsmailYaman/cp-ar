@@ -1,7 +1,7 @@
 export const handelingen = [
     {
         id: 1,
-        title: "1. Zorg voor een veilige omgeving en controleer de bewustzijn van de slachtoffer.",
+        title: "Stap 1: Zorg voor een veilige omgeving en controleer de bewustzijn van de slachtoffer.",
         description: [
             "Schud aan de schouders en vraag 'Gaat het?'",
             "Geen reactie? Dan is de slachtoffer bewusteloos.",
@@ -10,7 +10,7 @@ export const handelingen = [
     },
     {
         id: 2,
-        title: "2. Bel of laat 112 bellen",
+        title: "Stap 2: Bel of laat 112 bellen",
         description: [
             "Vraag om een ambulance en vertel dat er een slachtoffer bewusteloos is.",
             "Zet de telefoon op luidspreken en leg deze bij je in de buurt. De hulpverlener aan de telefoon zal je door de reanimatie begeleiden.",
@@ -20,7 +20,7 @@ export const handelingen = [
     },
     {
         id: 3,
-        title: "3. Controleer de ademhaling",
+        title: "Stap 3: Controleer de ademhaling",
         description: [
             "Til de kin op door twee vingers onder de kin te plaatsen en het hoofd naar achteren te kantelen.",
             "Kijk, terwijl je de kin omhoog houdt naar de borstkast om te zien of deze omhoog komt.",
@@ -31,13 +31,13 @@ export const handelingen = [
     },
     {
         id: 4,
-        title: "4. Begin met reanimatie",
+        title: "Stap 4: Begin met reanimatie",
         description: ["Plaats de slachtoffer op zijn rug."],
         image: "/img/handelingen/4.jpg",
     },
     {
         id: 5,
-        title: "4. Begin met reanimatie",
+        title: "Stap 4: Begin met reanimatie",
         description: [
             "Plaats de slachtoffer op zijn rug.",
             "Plaats de onderkant van je ene hand op de borst van het slachtoffer.",
@@ -46,7 +46,7 @@ export const handelingen = [
     },
     {
         id: 6,
-        title: "4. Begin met reanimatie",
+        title: "Stap 4: Begin met reanimatie",
         description: [
             "Plaats de slachtoffer op zijn rug.",
             "Plaats de onderkant van je ene hand op de borst van het slachtoffer.",
@@ -56,7 +56,7 @@ export const handelingen = [
     },
     {
         id: 7,
-        title: "4. Begin met reanimatie",
+        title: "Stap 4: Begin met reanimatie",
         description: [
             "Plaats de slachtoffer op zijn rug.",
             "Plaats de onderkant van je ene hand op de borst van het slachtoffer.",
@@ -67,7 +67,7 @@ export const handelingen = [
     },
     {
         id: 8,
-        title: "4. Begin met reanimatie",
+        title: "Stap 4: Begin met reanimatie",
         description: [
             "Plaats de slachtoffer op zijn rug.",
             "Plaats de onderkant van je ene hand op de borst van het slachtoffer.",
@@ -79,7 +79,7 @@ export const handelingen = [
     },
     {
         id: 9,
-        title: "5. Geef 2 beademingen",
+        title: "Stap 5: Geef 2 beademingen",
         description: [
             "Zorg ervoor dat de luchtweg vrij is en klap je neus dicht van de slachtoffer.",
             "Adem normaal in, plaats je lippen rond de mond van het slachtoffer en sluit de goed af. Adem in één seconde gelijkmatig uit in de mond van het slachtoffer. Kijk daarbij uit je ooghoek of de borstkast van het slachtoffer omhoog komt.",
@@ -89,7 +89,7 @@ export const handelingen = [
     },
     {
         id: 10,
-        title: "6. Ga door met de reanimatie",
+        title: "Stap 6: Ga door met de reanimatie",
         description: [
             "Blijf 30 borstcompressies en 2 beademingen te geven.",
             "Ga door tot de AED er is.",
@@ -110,7 +110,7 @@ export const aed = [
     },
     {
         id: 2,
-        title: "1. Voorbereiding van het AED",
+        title: "Stap 1: Voorbereiding van het AED",
         description: [
             "Ontbloot de borstkas van de slachtoffer: onderbreek de borstcompressies zo kort mogelijk",
             "Activeer de AED.",
@@ -119,7 +119,7 @@ export const aed = [
     },
     {
         id: 3,
-        title: "2. Plaats de pads op de borst van de slachtoffer",
+        title: "Stap 2: Plaats de pads op de borst van de slachtoffer",
         description: [
             "Plaats de pads op de borst van de slachtoffer",
             "Zorg ervoor dat ze op de juiste kant worden geplaats, zoals aangegeven op de pad.",
@@ -129,7 +129,7 @@ export const aed = [
     },
     {
         id: 4,
-        title: "3. Druk op “analyseren” op het AED",
+        title: "Stap 3: Druk op “analyseren” op het AED",
         description: [
             "Het AED zal een analyse doen van het slachtoffer.",
             "Als een schok nodig is, informeert de machine je.",
@@ -139,7 +139,7 @@ export const aed = [
     },
     {
         id: 5,
-        title: "4. Check de slachtoffer",
+        title: "Stap 4: Check de slachtoffer",
         description: [
             "Verwijder de pads niet een ga door met reanimeren. Doe dit voor 5 cyclussen voordat je het AED opnieuw gebruikt.",
             "Check of de pads nog op hun plaats zitten.",

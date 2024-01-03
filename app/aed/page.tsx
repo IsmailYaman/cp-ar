@@ -30,12 +30,12 @@ const AedHome: React.FC = () => {
     const hasNext = currentAedIndex < aed.length - 1; // Determine if there is a next item
 
     return (
-        <div className="flex flex-col mt-20 mb-20 overflow-auto h-screen">
+        <div className="flex flex-col mt-20 mb-24 h-screen">
             <Header title="AED training" />
-            <div className="w-96 mx-auto">
-                <div className="pt-5">
+            <div className="w-96 mx-auto pb-5">
+                <div className="py-10">
                     <h1 className="text-3xl">Wanneer moet je een AED gebruiken?</h1>
-                    <p className="pt-2.5">
+                    <p className="pt-4">
                         Een AED wordt gebruikt in situaties waarin iemand een hartstilstand heeft. Dit betekend niet dat
                         de hart helemaal stil staat, maar in een fibrilerende toestand is. Met een schok kan de
                         hartritme weer op zijn normale tempo komen.
@@ -79,10 +79,10 @@ const AedHome: React.FC = () => {
             </div>
             {!hasNext ? ( 
                 <div className="container w-96 mx-auto flex flex-col items-center py-4 z-10">
-                    <a href="/aed" className="btn btn-primary btn-block text-center">
+                    <a href="/aed" className="btn btn-lg btn-primary btn-block text-center">
                         Eerste hulp bij hartaanvallen
                     </a>
-                    <a href="/" className="btn btn-secondary btn-block my-3 text-center">
+                    <a href="/" className="btn btn-lg btn-secondary btn-block my-3 text-center">
                         Terug naar hoofdmenu
                     </a>
                 </div>

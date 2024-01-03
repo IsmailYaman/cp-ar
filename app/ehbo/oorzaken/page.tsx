@@ -6,13 +6,13 @@ import React from "react";
 const Oorzaken = () => {
     const oorzaak = oorzaken;
     return (
-        <div className="flex flex-col mt-20 mb-20 h-screen">
+        <div className="flex flex-col mt-20 mb-24 h-screen">
             <Header title="Eerste hulp bij hartaanvallen" />
-            <div className="w-96 mx-auto flex-grow">
-                <div className="pt-5">
+            <div className="w-96 mx-auto pb-5">
+                <div className="py-10">
                     <h1 className="text-3xl">{oorzaak.title1}</h1>
                     {oorzaak.description1.map((desc, index) => (
-                        <p key={index} className="pt-2.5">
+                        <p key={index} className="pt-4">
                             {desc}
                         </p>
                     ))}
