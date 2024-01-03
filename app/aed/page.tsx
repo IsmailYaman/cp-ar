@@ -30,7 +30,7 @@ const AedHome: React.FC = () => {
     const hasNext = currentAedIndex < aed.length - 1; // Determine if there is a next item
 
     return (
-        <div className="flex flex-col pt-20 overflow-auto h-screen">
+        <div className="flex flex-col mt-20 mb-20 overflow-auto h-screen">
             <Header title="AED training" />
             <div className="w-96 mx-auto">
                 <div className="pt-5">
@@ -41,6 +41,7 @@ const AedHome: React.FC = () => {
                         hartritme weer op zijn normale tempo komen.
                     </p>
                 </div>
+                
                 <div className="pt-5">
                     {currentAed.introTitle ? <h2 className="text-2xl">{currentAed.introTitle}</h2> : ""}
                     {currentAed.title ? <h2 className="text-2xl">{currentAed.title}</h2> : ""}

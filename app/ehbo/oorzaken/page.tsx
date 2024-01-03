@@ -6,7 +6,7 @@ import React from "react";
 const Oorzaken = () => {
     const oorzaak = oorzaken;
     return (
-        <div className="flex flex-col pt-20 h-screen">
+        <div className="flex flex-col mt-20 mb-20 h-screen">
             <Header title="Eerste hulp bij hartaanvallen" />
             <div className="w-96 mx-auto flex-grow">
                 <div className="pt-5">

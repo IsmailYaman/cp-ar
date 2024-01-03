@@ -27,10 +27,10 @@ const Handelingen: React.FC = () => {
     const hasNext = currentHandelingIndex < handelingen.length - 1; // Declare the variable hasNext
 
     return (
-            <div className="flex flex-col mt-20 h-screen">
+            <div className="flex flex-col mt-20 mb-24 h-screen">
                 <Header title="Eerste hulp bij hartaanvallen" />
                 <div className="w-96 mx-auto pb-5">
-                    <div className="pt-5">
+                    <div className="py-5">
                         <h1 className="text-3xl">Handelingen tijdens eerste hulp</h1>
                         <p className="pt-2.5">
                             Een hartaanval kan overal plaatsvinden. Thuis, tijdens werk of tijdens sporten. Om een
@@ -40,7 +40,7 @@ const Handelingen: React.FC = () => {
                     </div>
                     <div className="pt-5">
                         <h2 className="text-2xl">{currentHandeling.title}</h2>
-                        <ol className="list-decimal list inside mb-5">
+                        <ol className="list-decimal list-inside mb-5">
                             {currentHandeling.description.map((desc, index) => (
                                 <li key={index} className="pt-2.5">
                                     {desc}
