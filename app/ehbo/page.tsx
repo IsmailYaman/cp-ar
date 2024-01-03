@@ -6,9 +6,9 @@ import Header from "../components/header";
 const EhboHome = () => {
     return (
         <>
-            <div className="flex flex-col h-screen">
+            <div className="flex flex-col min-h-screen"> {/* Use min-h-screen */}
                 <Header title="Eerste hulp bij hartaanvallen" />
-                <div className="flex justify-center flex-grow items-center">
+                <div className="flex-1 flex justify-center items-center overflow-auto"> {/* flex-1 and overflow-auto */}
                     <div className="flex flex-col">
                         <Link className="btn btn-secondary mb-5" href="ehbo/handelingen">
                             Handelingen tijdens eerste hulp
@@ -26,5 +26,6 @@ const EhboHome = () => {
         </>
     );
 };
+
 
 export default EhboHome;

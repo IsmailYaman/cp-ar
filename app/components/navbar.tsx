@@ -11,7 +11,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ goToNextStep, goToPreviousStep, hasPrevious, hasNext }) => {
     return (
         <>
-            <div className="bg-primary flex py-3 justify-between items-center text-center">
+            <div className="bg-primary z-50 flex py-3 justify-between items-center text-center fixed bottom-0 w-full">
                 <a onClick={goToPreviousStep} className={`flex-grow ${!hasPrevious ? "invisible" : ""}`}>
                     <Image
                         src={"/img/back.svg"}
