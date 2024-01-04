@@ -12,29 +12,26 @@ export default function Home() {
                     <strong className="mx-4 font-bold text-white  text-2xl">CP-AR</strong>
                 </div>
             </div>
-
-            <div className="px-4">
-                <div className="mask mask-squircle bg-gradient-to-b from-primary to-red-700 p-3 w-32 h-32">
-                    <Image src="img/logo.svg" width={100} height={100} alt="logo" />
-                </div>
-                <h1 className="text-4xl py-4">Leer Eerste Hulp</h1>
-                <p className=" mb-8">
-                    Ontdek hoe te handelen bij een hartstilstand met duidelijke stappen voor CPR en AED-gebruik.
-                    Verbeter je vaardigheden met onze interactieve AR-game.
-                </p>
-            </div>
-
-            <div className="flex justify-center items-center h-screen">
-                <div className="flex flex-col w-full max-w-4xl px-4">
-                    <h1 className="text-center py-8">CP-AR</h1>
-                    <Link className="btn btn-secondary btn-lg mb-5" href="/ehbo">
+            <div className="container mx-auto mt-5 px-5">
+                <div className="justify-center items-center h-screen">
+                    {/* <div className="mask mask-squircle bg-gradient-to-b from-primary to-red-700 p-3 w-32 h-32">
+                        <Image src="img/logo.svg" width={100} height={100} alt="logo" />
+                    </div> */}
+                    <div>
+                        <h1 className="text-4xl py-4">Leer Eerste Hulp</h1>
+                        <p className=" mb-8">
+                            Ontdek hoe te handelen bij een hartstilstand met duidelijke stappen voor reanimatie en AED-gebruik.
+                            Verbeter je vaardigheden met de interactieve Augmented Reality ervaring.
+                        </p>
+                    </div>
+                    <Link className="btn btn-secondary btn-lg btn-block mb-5" href="/ehbo">
                         Eerste hulp bij hartaanvallen
                     </Link>
-                    <Link className="btn btn-secondary btn-lg mb-5" href="/aed">
+                    <Link className="btn btn-secondary btn-block btn-lg mb-5" href="/aed">
                         AED training
                     </Link>
                     <Link
-                        className="btn btn-primary btn-lg"
+                        className="btn btn-primary btn-lg btn-block"
                         tabIndex={-1}
                         role="button"
                         href="https://360fabriek.8thwall.app/ismail-test/"
