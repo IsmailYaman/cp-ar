@@ -30,7 +30,7 @@ const AedHome: React.FC = () => {
     const hasNext = currentAedIndex < aed.length - 1; // Determine if there is a next item
 
     return (
-        <div className="flex flex-col mt-20 mb-24 h-screen">
+        <div className="flex flex-col mt-20 mb-36 h-screen">
             <Header title="AED training" />
             <div className="w-96 mx-auto pb-5">
                 <div className="py-10">
@@ -82,7 +82,7 @@ const AedHome: React.FC = () => {
                     <a href="/aed" className="btn btn-lg btn-primary btn-block text-center">
                         Eerste hulp bij hartaanvallen
                     </a>
-                    <a href="/" className="btn btn-lg btn-secondary btn-block my-3 text-center">
+                    <a href="/" className="btn btn-lg btn-secondary btn-block my-3 mb-16s text-center">
                         Terug naar hoofdmenu
                     </a>
                 </div>

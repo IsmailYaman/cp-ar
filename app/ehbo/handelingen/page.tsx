@@ -27,7 +27,7 @@ const Handelingen: React.FC = () => {
     const hasNext = currentHandelingIndex < handelingen.length - 1; // Declare the variable hasNext
 
     return (
-            <div className="flex flex-col mt-20 mb-24 h-screen">
+            <div className="flex flex-col mt-20 mb-36 h-screen">
                 <Header title="Eerste hulp bij hartaanvallen" />
                 <div className="w-96 mx-auto pb-5">
                     <div className="py-10">
@@ -63,7 +63,7 @@ const Handelingen: React.FC = () => {
                         <a href="/aed" className="btn btn-lg btn-primary btn-block text-center">
                             AED training
                         </a>
-                        <a href="/" className="btn btn-lg btn-secondary btn-block my-3 text-center">
+                        <a href="/" className="btn btn-lg btn-secondary btn-block my-3 mb-16 text-center">
                             Terug naar hoofdmenu
                         </a>
                     </div>
