@@ -1,17 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const Alert = () => {
-    // State to manage the visibility of the alert
-    const [isVisible, setIsVisible] = useState(true);
+    const [isVisible, setIsVisible] = useState(() => {
+        const isAlertClosed = sessionStorage.getItem("isAlertClosed");
+        return isAlertClosed ? false : true;
+    });
 
-    // Function to hide the alert
     const handleClose = () => {
         setIsVisible(false);
+        sessionStorage.setItem("isAlertClosed", "true");
     };
 
-    // Only render the alert if isVisible is true
     if (!isVisible) return null;
 
     return (
