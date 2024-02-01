@@ -14,7 +14,7 @@ const Symptomen = () => {
                     <h1 className="text-3xl">{symptoom.title1}</h1>
                     <ul className="list-disc pl-5 mb-5">
                         {symptoom.description1.map((factor, index) => (
-                            <li key={index} className="pt-4">
+                            <li key={index} className="pt-4 font-bold">
                                 {factor}
                             </li>
                         ))}

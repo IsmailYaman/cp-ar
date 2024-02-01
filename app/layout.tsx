@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
       <html data-theme="mytheme" lang="en">
             <body className={`${inter.className} flex flex-col min-h-screen`}>
-                <div className="flex-1"> {/* Add padding at the bottom */}
+                <div className="flex-1 mb-8"> {/* Add padding at the bottom */}
                     {children} {/* Main content */}
                 </div>
             </body>
